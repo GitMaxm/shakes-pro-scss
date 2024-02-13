@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--container-width: 1510px;
+	--container-padding: 30px;
+
+	--font-family: "Gotham", sans-serif;
+	--second-family: "Overpass", sans-serif;
+	--third-family: "Gotham Pro", sans-serif;
+
+	--page-bg: #181818;
+	--text-color: #fff;
+	--page-muted: rgba(255, 255, 255, 0.5);
+	--accent: #34bbda;
+	--text-white: #fff;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("./../fonts/gotham_book.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("./../fonts/gotham_medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("./../fonts/gothampro_regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}

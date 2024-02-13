@@ -1,0 +1,63 @@
+.bottom-content {
+    padding-top: 98px;
+    padding-bottom: 300px;
+
+    @media (max-width: 1100px) {
+        padding-top: 84px;
+    }
+    @media (max-width: 590px) {
+        padding-top: 20px;
+    }
+}
+
+.bottom-content__title {
+    max-width: 979px;
+    margin-bottom: 30px;
+}
+
+.bottom-content__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+
+    @media (max-width: 1470px) {
+        gap: 5px;
+    }
+}
+
+.bottom-content__access-list {
+    margin-bottom: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 20px;
+}
+
+.bottom-content__access-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom-content__access-item::before {
+    content: "";
+    background: url(./../img/bottom-content/check.png);
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+.bottom-content__registration {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.bottom-content__registration-description {
+}
+.bottom-content__registration-btn {
+    width: 241px;
+    height: 55px;
+}
