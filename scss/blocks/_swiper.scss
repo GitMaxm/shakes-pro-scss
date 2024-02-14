@@ -7,14 +7,23 @@
         width: 350px !important;
         height: 195px;
     }
+    @media (max-width: 960px) {
+        order: 1;
+    }
 }
 
 .swiper-container {
+    // position: relative;
     display: flex;
     align-items: center;
     gap: 23px;
+
     @media (max-width: 1470px) {
         gap: 0;
+    }
+    @media (max-width: 960px) {
+        flex-direction: column;
+        gap: 14px;
     }
 }
 
@@ -23,14 +32,22 @@
     justify-content: center;
 }
 
-.button-prev,
-.button-next {
+.swiper-navigation {
+    @media (max-width: 960px) {
+        display: flex !important;
+        gap: 14px;
+        order: 2;
+    }
+}
+
+.button-swiper {
     width: 66px;
     height: 66px;
     border-radius: 100%;
     background: #3a3a3a;
     stroke-width: 1px;
     border: 1px solid var(--text-color);
+    cursor: pointer; /* Добавлено для лучшей визуальной отзывчивости */
 
     display: flex;
     align-items: center;
@@ -40,17 +57,50 @@
         width: 50px;
         height: 50px;
     }
+    @media (max-width: 960px) {
+        width: 45px;
+        height: 45px;
+    }
+
+    &--none {
+        @media (max-width: 960px) {
+            display: none;
+        }
+    }
+
+    &--block {
+        @media (max-width: 960px) {
+            display: flex !important;
+        }
+    }
+}
+
+.button-swiper:hover {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
 }
 
 .button-next {
     order: 3;
-    margin-right: -20px;
     z-index: 2;
+
+    @media (max-width: 1200px) {
+        margin-left: -20px;
+    }
+    @media (max-width: 960px) {
+        margin: 0;
+    }
 }
 .button-prev {
     order: 1;
-    margin-left: -20px;
     z-index: 2;
+
+    @media (max-width: 1200px) {
+        margin-right: -20px;
+    }
+    @media (max-width: 960px) {
+        margin: 0;
+    }
 }
 
 .swiper-slide {
@@ -63,10 +113,23 @@
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 1470px) {
+    @media (max-width: 1370px) {
         height: 82px !important;
     }
-    @media (max-width: 1200px) {
-        padding: 5px;
+
+    @media (max-width: 960px) {
+        height: 75px !important;
     }
+
+    img {
+        max-height: 72px;
+        @media (max-width: 960px) {
+            max-height: 65px;
+        }
+    }
+}
+
+.swiper-slide:hover {
+    border: 1px solid var(--accent);
+    background: #202020;
 }

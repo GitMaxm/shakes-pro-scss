@@ -24,40 +24,70 @@
     @media (max-width: 1470px) {
         gap: 5px;
     }
+    @media (max-width: 960px) {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
-.bottom-content__access-list {
-    margin-bottom: 35px;
+.bottom-content__access {
+    &-list {
+        margin-bottom: 35px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
-.bottom-content__access-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.bottom-content__access-item::before {
-    content: "";
-    background: url(./../img/bottom-content/check.png);
-    width: 15px;
-    height: 15px;
-    display: block;
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 1020px) {
+            font-size: 18px;
+        }
+        @media (max-width: 600px) {
+            font-size: 14px;
+            align-items: flex-start;
+        }
+    }
 }
 
 .bottom-content__registration {
     display: flex;
     align-items: center;
     gap: 25px;
-}
 
-.bottom-content__registration-description {
-}
-.bottom-content__registration-btn {
-    width: 241px;
-    height: 55px;
+    @media (max-width: 960px) {
+        margin: 0 auto;
+    }
+
+    &-btn {
+        width: 241px;
+        height: 55px;
+    }
+
+    &-description {
+        font-size: 18px;
+
+        @media (max-width: 1020px) {
+            font-size: 16px;
+        }
+    }
+
+    &--block {
+        @media (max-width: 960px) {
+            display: flex !important;
+            flex-direction: column;
+        }
+    }
+
+    &--none {
+        @media (max-width: 960px) {
+            display: none;
+        }
+    }
 }

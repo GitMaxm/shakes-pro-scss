@@ -21,6 +21,8 @@
     font-weight: 500;
     font-size: 35px;
 
+    position: relative;
+
     @media (max-width: 1100px) {
         font-size: 30px;
     }
@@ -28,6 +30,18 @@
     @media (max-width: 590px) {
         font-size: 20px;
     }
+}
+
+.top-content__subtitle::before {
+    position: absolute;
+    content: "";
+    background: url("./../img/top-content/arr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 12px;
+    top: 46px;
+    left: 269px;
 }
 
 .subtitle-underlined {
@@ -95,6 +109,11 @@
         height: 49px;
         align-items: center;
     }
+}
+
+.top-content__offers-item:hover {
+    border: 1px solid var(--accent);
+    background: #202020;
 }
 
 .offers-item__img {

@@ -1,0 +1,135 @@
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 23px;
+    padding-bottom: 28px;
+    background-color: #2c2c2c;
+
+    @media (max-width: 1000px) {
+        padding-top: 29px;
+        padding-bottom: 18px;
+    }
+
+    @media (max-width: 800px) {
+        padding-top: 24px;
+        padding-bottom: 30px;
+    }
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-bottom: 26px;
+
+    @media (max-width: 1000px) {
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 930px) {
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media (max-width: 800px) {
+        padding-bottom: 27px;
+    }
+}
+
+.footer__payment-list {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    @media (max-width: 930px) {
+        gap: 7px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer__payment-item {
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    background: #272627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__payment-item:hover {
+    border: 1px solid var(--accent);
+    background: #202020;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+
+    @media (max-width: 1186px) {
+        margin-left: auto;
+    }
+    @media (max-width: 930px) {
+        margin-left: 0;
+    }
+}
+
+.footer__social-item {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+
+    &--telegram {
+        background: #039be5;
+    }
+    &--vk {
+        background: #4b729f;
+    }
+    &--traffiс {
+        background: #d35a2f;
+        padding: 13px 15px 16px 16px;
+    }
+}
+
+.footer__info {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding-top: 16px;
+
+    @media (max-width: 1000px) {
+        padding-top: 19px;
+    }
+
+    @media (max-width: 800px) {
+        padding-top: 23px;
+    }
+}
+.footer__rights {
+    margin: 0 auto;
+    max-width: 690px;
+
+    font-family: var(--third-family);
+    font-size: 13px;
+    line-height: 1.4;
+
+    margin-bottom: 13px;
+
+    @media (max-width: 1000px) {
+        max-width: 835px;
+    }
+
+    @media (max-width: 930px) {
+        max-width: 300px;
+    }
+}
+.footer__privacy-policy {
+    font-family: var(--third-family);
+    font-size: 14px;
+    color: var(--color-text);
+}

@@ -16,6 +16,7 @@
     <header class="header">
         <div class="container">
             <div class="header-row">
+
                 <!-- логотип -->
                 <div class="logo header-logo">
                     <a href="#!"><img src="./img/logo.png" alt="СРА сеть SHAKES PRO"></a>
@@ -72,7 +73,7 @@
                     <!-- список предложений -->
                     <ul class="top-content__offers-list">
 
-                        <li class="top-content__offers-item">
+                        <li class="top-content__offers-item shadow-drop-center">
                             <div class="offers-item__img">
                                 <img src="./img/top-content/01.svg" alt="Глобус">
                             </div>
@@ -121,17 +122,35 @@
                         Получи доступ к 2000+ офферам по нутре, включая топ-бренды
                     </h2>
 
+
                     <div class="bottom-content__section">
                         <div class="bottom-content__info">
+
                             <!-- список  -->
                             <ul class="bottom-content__access-list">
-                                <li class="bottom-content__access-item">защита от невыплат сторонних рекламодателей</li>
-                                <li class="bottom-content__access-item">приватные тесты новых авторских офферов</li>
-                                <li class="bottom-content__access-item">поиск и добавление офферов под запрос</li>
+                                <li class="bottom-content__access-item">
+                                    <div class="access-item__img">
+                                        <img src="./img/bottom-content/check.png" alt="Галочка">
+                                    </div>
+                                    <p class="access-item__text">защита от невыплат сторонних рекламодателей</p>
+                                </li>
+                                <li class="bottom-content__access-item">
+                                    <div class="access-item__img">
+                                        <img src="./img/bottom-content/check.png" alt="Галочка">
+                                    </div>
+                                    <p class="access-item__text">приватные тесты новых авторских офферов</p>
+                                </li>
+                                <li class="bottom-content__access-item">
+                                    <div class="access-item__img">
+                                        <img src="./img/bottom-content/check.png" alt="Галочка">
+                                    </div>
+                                    <p class="access-item__text">поиск и добавление офферов под запрос</p>
+                                </li>
+
                             </ul>
 
                             <!-- регистрация  -->
-                            <div class="bottom-content__registration">
+                            <div class="bottom-content__registration bottom-content__registration--none">
                                 <div class="bottom-content__registration-description">
                                     <p>Получи доступ офферам</p>
                                 </div>
@@ -140,9 +159,8 @@
                             </div>
                         </div>
 
+                        <!-- Контейнер свайпера  -->
                         <div class="swiper-container">
-
-                            <!-- Slider main container -->
                             <div class="swiper">
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
@@ -186,20 +204,101 @@
                                 </div>
                             </div>
 
-                            <div class="button-prev">
+                            <!-- Кнопки -->
+                            <div class="button-prev button-swiper button-swiper--none">
                                 <img src="./img/bottom-content/prev.png" alt="Стрелка вперед">
                             </div>
-                            <div class="button-next">
+                            <div class="button-next button-swiper button-swiper--none">
                                 <img src="./img/bottom-content/next.png" alt="Стрелка назад">
+                            </div>
+
+                            <!-- Кнопки при адаптиве -->
+                            <div class="swiper-navigation none">
+                                <div class="button-prev button-swiper button-swiper--block">
+                                    <img src="./img/bottom-content/prev.png" alt="Стрелка вперед">
+                                </div>
+                                <div class="button-next button-swiper button-swiper--block">
+                                    <img src="./img/bottom-content/next.png" alt="Стрелка назад">
+                                </div>
                             </div>
                         </div>
 
+                        <!-- регистрация при мобильной адаптиции -->
+                        <div class="bottom-content__registration  bottom-content__registration--block none">
+                            <div class="bottom-content__registration-description">
+                                <p>Получи доступ офферам</p>
+                            </div>
+                            <button class="bottom-content__registration-btn registration-btn"
+                                type="button">Зарегистрироваться</button>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__content">
+                    <div class="footer__logo logo">
+                        <a href="#!" class="footer__logo-link"><img src="./img/logo.png" alt="Логотип"></a>
+                    </div>
+
+                    <!-- Оплата -->
+                    <ul class="footer__payment-list">
+                        <li class="footer__payment-item">
+                            <a href="#!" class="footer__payment-link">
+                                <img src="./img/footer/01.png" alt="WebMoney">
+                            </a>
+                        </li>
+                        <li class="footer__payment-item">
+                            <a href="#!" class="footer__payment-link">
+                                <img src="./img/footer/02.png" alt="Capitalist">
+                            </a>
+                        </li>
+                        <li class="footer__payment-item">
+                            <a href="#!" class="footer__payment-link">
+                                <img src="./img/footer/03.png" alt="Wire Transfer">
+                            </a>
+                        </li>
+                        <li class="footer__payment-item">
+                            <a href="#!" class="footer__payment-link">
+                                <img src="./img/footer/03.png" alt="Wire Transfer">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Социальные сети -->
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item footer__social-item--telegram heartbeat">
+                            <a href="#!" class="footer__social-link">
+                                <img src="./img/footer/telegram.png" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="footer__social-item footer__social-item--vk heartbeat">
+                            <a href="#!" class="footer__social-link">
+                                <img src="./img/footer/vk.png" alt="vk">
+                            </a>
+                        </li>
+                        <li class="footer__social-item footer__social-item--traffiс heartbeat">
+                            <a href="#!" class="footer__social-link">
+                                <img src="./img/footer/traffiC.png" alt="TraffiC Cardinal">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info">
+            <p class="footer__rights">ⓒ 2013-2022 All rights reserved. Affiliate Networks Group EZE LLC
+                A-30-01-04-08, Flamingo Villas, Ajman, United Arab Emirates</p>
+            <a href="#!" class="footer__privacy-policy">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

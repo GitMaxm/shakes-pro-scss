@@ -14,18 +14,33 @@ body {
 	font-size: 18px;
 	font-weight: 400;
 
-	@media (max-width: 1000px) {
-		background: url("./../img/bg-elem/bg-1920.png") var(--page-bg);
+	@media (max-width: 1360px) {
+		background: url("./../img/bg-elem/bg-960.png") var(--page-bg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
-	@media (max-width: 600px) {
-		background: url("./../img/bg-elem/bg-1920.png") var(--page-bg);
-		background-size: cover;
-		background-repeat: no-repeat;
+	@media (max-width: 700px) {
+		position: relative;
+		background: var(--page-bg);
 	}
 }
+
+@media (max-width: 700px) {
+	body::before {
+		position: absolute;
+		content: "";
+		background: url("./../img/bg-elem/bg-360.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 423px;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+}
+
 body.no-scroll {
 	overflow: hidden;
 }

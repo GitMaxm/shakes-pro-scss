@@ -37,6 +37,7 @@ mobileNav();
 
 function swiperFunc() {
     const swiper = new Swiper('.swiper', {
+        loop: false,
         slidesPerView: 3,
         grid: {
             rows: 2,
@@ -48,10 +49,22 @@ function swiperFunc() {
             prevEl: '.button-prev',
         },
         breakpoints: {
-            1420: {
+            1370: {
+                slidesPerView: 3,
+                spaceBetween: 21,
+            },
+
+            1100: {
                 slidesPerView: 2,
                 spaceBetween: 21,
             },
+
+            960: {
+                slidesPerView: 2,
+                spaceBetween: 19,
+            },
+
+
         }
     });
 }
