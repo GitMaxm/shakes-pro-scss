@@ -59,10 +59,7 @@ function swiperFunc() {
                 spaceBetween: 21,
             },
 
-            960: {
-                slidesPerView: 2,
-                spaceBetween: 19,
-            },
+
             350: {
                 slidesPerView: 2,
                 spaceBetween: 19,

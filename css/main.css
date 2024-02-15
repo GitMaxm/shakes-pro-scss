@@ -1243,7 +1243,7 @@ img {
 }
 @media (max-width: 1370px) {
   .swiper {
-    width: 350px !important;
+    width: 320px !important;
     height: 195px;
   }
 }
@@ -1405,6 +1405,7 @@ img {
 @media (max-width: 960px) {
   .swiper-slide {
     height: 75px !important;
+    width: 150px !important;
   }
 }
 .swiper-slide img {

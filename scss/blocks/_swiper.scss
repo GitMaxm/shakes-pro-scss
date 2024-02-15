@@ -4,7 +4,7 @@
     order: 2;
 
     @media (max-width: 1370px) {
-        width: 350px !important;
+        width: 320px !important;
         height: 195px;
     }
     @media (max-width: 960px) {
@@ -119,6 +119,7 @@
 
     @media (max-width: 960px) {
         height: 75px !important;
+        width: 150px !important;
     }
 
     img {
