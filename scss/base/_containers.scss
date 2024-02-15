@@ -2,13 +2,15 @@
 	padding: 0 var(--container-padding);
 	max-width: var(--container-width);
 	margin: 0 auto;
+
+	@media (max-width: 590px) {
+		padding: 0 20px;
+	}
 }
 
 .container-right {
 	/* overflow-x: hidden; */
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 
 	@media (max-width: 1229px) {
 		padding-left: var(--container-padding);
@@ -18,9 +20,7 @@
 
 .container-left {
 	/* overflow-x: hidden; */
-	padding-right: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 
 	@media (max-width: 1229px) {
 		padding-left: var(--container-padding);

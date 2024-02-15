@@ -40,8 +40,23 @@
     background-repeat: no-repeat;
     width: 76px;
     height: 12px;
-    top: 46px;
+    top: 44px;
     left: 269px;
+
+    @media (max-width: 990px) {
+        top: 66px;
+        left: 269px;
+    }
+
+    @media (max-width: 590px) {
+        background: url("./../img/top-content/arr4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 82px;
+        height: 46px;
+        top: 61px;
+        left: 70%;
+    }
 }
 
 .subtitle-underlined {
@@ -56,6 +71,8 @@
     margin-top: 47px;
     margin-bottom: 78px;
 
+    position: relative;
+
     @media (max-width: 1100px) {
         margin-top: 28px;
         margin-bottom: 28px;
@@ -65,6 +82,33 @@
         margin-bottom: 15px;
     }
 }
+.top-content__title::before {
+    position: absolute;
+    content: "";
+    background: url("./../img/top-content/arr2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 21px;
+    bottom: 94px;
+    left: 193px;
+
+    @media (max-width: 1500px) {
+        bottom: 67px;
+        left: 160px;
+    }
+    @media (max-width: 1100px) {
+        bottom: 77px;
+        left: 135px;
+    }
+    @media (max-width: 990px) {
+        bottom: 38px;
+        left: 185px;
+    }
+    @media (max-width: 590px) {
+        display: none;
+    }
+}
 
 .title--empty {
     color: transparent;
@@ -72,6 +116,8 @@
 }
 
 .top-content__offers-list {
+    position: relative;
+
     margin-bottom: 43px;
 
     display: flex;
@@ -85,6 +131,25 @@
     @media (max-width: 900px) {
         gap: 9px;
         flex-direction: column;
+    }
+}
+
+.top-content__offers-list::before {
+    @media (max-width: 590px) {
+        position: absolute;
+        content: "";
+        background: url("./../img/top-content/arr3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 44px;
+        height: 31px;
+        bottom: -12px;
+        right: 20px;
+
+        z-index: -1;
+
+        -webkit-animation: wobble-ver-left 2s infinite both;
+        animation: wobble-ver-left 2s infinite both;
     }
 }
 
